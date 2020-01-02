@@ -9,15 +9,15 @@ class Model
     public function __call($name, $arguments)
     {
 
-        $namethod = substr($name, 0, 3);
-        $fieldname = substr($name, 3, strlen($name));
+        $nameMethod = substr($name, 0, 3);
+        $fieldName = substr($name, 3, strlen($name));
 
-        switch ($namethod) {
+        switch ($nameMethod) {
             case "get":
-                $this->value[$fieldname];
+                return $this->value[$fieldName];
             break;
             case "set":
-                $this->value[$fieldname] = $arguments[0];
+                $this->value[$fieldName] = $arguments[0];
             break;
         }
 
@@ -34,7 +34,7 @@ class Model
 
     }
 
-    public function getValue()
+    public function getValues()
     {
         return $this->value;
     }
