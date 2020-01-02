@@ -50,8 +50,8 @@ class User extends Model
     public static function verifyLogin($inadmin = true)
     {
 
-        if (!isset(
-            $_SESSION[User::SESSION])
+        if (
+            !isset($_SESSION[User::SESSION])
             ||
             !$_SESSION[User::SESSION]
             ||
@@ -61,8 +61,7 @@ class User extends Model
         ) {
 
             header("Location: /admin/login");
-
-        } else {
+            exit;
 
         }
 
@@ -72,6 +71,24 @@ class User extends Model
     {
 
         $_SESSION[User::SESSION] = NULL;
+
+    }
+
+    public static function listAll()
+    {
+
+        $sql = new Sql();
+
+        return $sql->select("SELECT * FROM tb_users a INNER JOIN tb_persons b USING(idperson) ORDER BY b.desperson");
+
+    }
+
+    public function Update()
+    {
+
+        $sql = new Sql();
+
+        return $sql->select("SELECT * FROM tb_users a INNER JOIN tb_persons b USING(idperson) ORDER BY b.desperson");
 
     }
 
