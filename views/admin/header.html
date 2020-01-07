@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/res/admin/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="/res/admin/plugins/fa/font-awesome.min.css">-->
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
@@ -354,6 +355,16 @@
                 </li>
                 <!-- /.Acrescentado em 27/12/2019 -->
 
+
+                <!-- Acrescentado em 07/01/2020 -->
+                <li class="treeview">
+                    <a href="/admin/categories">
+                        <i class="fa fa-link"></i>
+                        <span>Categories</span>
+                        <span class="pull-right-container"></span>
+                    </a>
+                </li>
+                <!-- /.Acrescentado em 07/01/2020 -->
 
 
 
