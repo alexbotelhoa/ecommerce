@@ -17,7 +17,7 @@ $app->config('debug', true);
 
 /*
  * #############################################
- * Página Inicial - INICIO
+ * Páginas do Site - INICIO
  */
 
 $app->get("/", function() {
@@ -25,10 +25,25 @@ $app->get("/", function() {
 	$page = new Page();
 
 	$page->setTpl("index");
+
+});
+
+$app->get("/category/:idcategory", function($idcategory) {
+
+    $category = new Category();
+
+    $category->get((int)$idcategory);
+
+    $page = new Page();
+
+    $page->setTpl("category", [
+        "category" => $category->getValues(),
+        "products" => []
+    ]);
 });
 
 /*
- * Página Inicial - FIM
+ * Páginas do Site - FIM
  * #############################################
  */
 
@@ -44,6 +59,7 @@ $app->get("/admin", function() {
     $page = new PageAdmin();
 
     $page->setTpl("index");
+
 });
 
 /*
@@ -64,6 +80,7 @@ $app->get("/admin/login", function() {
     ]);
 
     $page->setTpl("login");
+
 });
 
 $app->post("/admin/login", function() {
@@ -313,7 +330,7 @@ $app->post("/admin/categories/create", function(){
 
     $category->setData($_POST);
 
-    $category->create();
+    $category->save();
 
     header("Location: /admin/categories");
 
@@ -347,7 +364,7 @@ $app->post("/admin/categories/:idcategory", function($idcategory) {
 
     $category->setData($_POST);
 
-    $category->update();
+    $category->save();
 
     header("Location: /admin/categories");
 

@@ -201,7 +201,7 @@ class User extends Model
 
         $sql = new Sql();
 
-        $result = $sql->select("CALL sp_users_save(:desperson, :deslogin, :despassword, :desemail, :nrphone, :inadmin)", array(
+        $result = $sql->select("CALL sp_users_create(:desperson, :deslogin, :despassword, :desemail, :nrphone, :inadmin)", array(
             ":desperson" => $this->getdesperson(),
             ":deslogin" => $this->getdeslogin(),
             ":despassword" => $this->getdespassword(),
