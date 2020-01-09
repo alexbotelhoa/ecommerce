@@ -88,7 +88,7 @@
                         <?php $counter1=-1;  if( isset($products) && ( is_array($products) || $products instanceof Traversable ) && sizeof($products) ) foreach( $products as $key1 => $value1 ){ $counter1++; ?>
                             <div class="single-product">
                                 <div class="product-f-image">
-                                    <img src="/res/site/img/product-1.jpg" alt="">
+                                    <img src="<?php echo htmlspecialchars( $value1["desphoto"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" alt="">
                                     <div class="product-hover">
                                         <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
                                         <a href="/products/<?php echo htmlspecialchars( $value1["desurl"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" class="view-details-link"><i class="fa fa-link"></i> Ver Detalhes</a>
@@ -96,7 +96,7 @@
                                 </div>
                                 <h2><a href="/products/<?php echo htmlspecialchars( $value1["desurl"], ENT_COMPAT, 'UTF-8', FALSE ); ?>"><?php echo htmlspecialchars( $value1["desproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?></a></h2>
                                 <div class="product-carousel-price">
-                                    <ins>R$ <?php echo htmlspecialchars( $value1["vlprice"], ENT_COMPAT, 'UTF-8', FALSE ); ?></ins> <del>R$ <?php echo htmlspecialchars( $value1["vlprice"] * 1.3, ENT_COMPAT, 'UTF-8', FALSE ); ?></del>
+                                    <ins>R$ <?php echo formatPrice($value1["vlprice"]); ?></ins> <del>R$ <?php echo formatPrice($value1["vlprice"] * 1.3); ?></del>
                                 </div>
                             </div>
                         <?php } ?>

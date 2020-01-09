@@ -23,6 +23,25 @@ class Product extends Model
 
     }
 
+    public static function checkList($list)
+    {
+
+        foreach ($list as &$row) {
+
+            $p = new Product();
+
+            $p->setData($row);
+
+            $row = $p->getValues();
+
+        }
+
+        return $list;
+
+    }
+
+
+
     public function save()
     {
 
@@ -69,11 +88,13 @@ class Product extends Model
 
     public function getValues()
     {
+
         $this->checkPhoto();
 
         $values = parent::getValues();
 
         return $values;
+
     }
 
     public function checkPhoto()
@@ -110,7 +131,7 @@ class Product extends Model
 
             switch ($extension) {
 
-                case "jpg":
+                //case "jpg":
 
                 case "jpeg":
                     $image = imagecreatefromjpeg($file["tmp_name"]);
