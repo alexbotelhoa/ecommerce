@@ -40,8 +40,6 @@ class Product extends Model
 
     }
 
-
-
     public function save()
     {
 

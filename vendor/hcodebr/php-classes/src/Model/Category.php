@@ -82,4 +82,64 @@ class Category extends Model
 
     }
 
+    public function getProducts($related = true)
+    {
+
+        $sql = new Sql();
+
+        if ($related === true) {
+
+            return $sql->select("
+                SELECT * FROM tb_products WHERE idproduct IN (
+                    SELECT a.idproduct
+                    FROM tb_products a
+                    INNER JOIN tb_categoriesproducts b ON a.idproduct = b.idproduct
+                    WHERE b.idcategory = :IDCATEGORY
+                )
+              ", array (
+                ":IDCATEGORY" => $this->getidcategory()
+            ));
+
+        } else {
+
+            return $sql->select("
+                SELECT * FROM tb_products WHERE idproduct NOT IN (
+                    SELECT a.idproduct
+                    FROM tb_products a
+                    INNER JOIN tb_categoriesproducts b ON a.idproduct = b.idproduct
+                    WHERE b.idcategory = :IDCATEGORY
+                )
+            ", array (
+                ":IDCATEGORY" => $this->getidcategory()
+            ));
+
+        }
+
+    }
+
+
+    public function addProduct($idproduct)
+    {
+
+        $sql = new Sql();
+
+        $sql->query("INSERT INTO tb_categoriesproducts (idcategory, idproduct) VALUES (:IDCATEGORY, :IDPRODUCT)", array(
+            ":IDCATEGORY" => $this->getidcategory(),
+            ":IDPRODUCT" => $idproduct
+        ));
+
+    }
+
+    public function removeProduct($idproduct)
+    {
+
+        $sql = new Sql();
+
+        $sql->query("DELETE FROM tb_categoriesproducts WHERE idcategory = :IDCATEGORY AND idproduct = :IDPRODUCT", array(
+            ":IDCATEGORY" => $this->getidcategory(),
+            ":IDPRODUCT" => $idproduct
+        ));
+
+    }
+
 }
