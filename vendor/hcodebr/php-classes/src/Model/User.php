@@ -8,7 +8,6 @@
 
 namespace Hcode\Model;
 
-
 use Hcode\DB\Sql;
 use Hcode\Mailer;
 use Hcode\Model;
@@ -165,7 +164,6 @@ class User extends Model
         ));
 
         if (count($results) === 0 ) {
-
             throw new \Exception("Não possível recurepar a senha!");
         } else {
             return $results[0];
