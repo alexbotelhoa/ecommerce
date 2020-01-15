@@ -21,11 +21,6 @@ $app->get("/", function() {
         "products" => Product::checkList($products)
     ]);
 
-
-    $page->setTpl("index", [
-        "products" => $products
-    ]);
-
 });
 
 $app->get("/admin", function() {
@@ -48,7 +43,7 @@ $app->get("/category/:idcategory", function($idcategory) {
 
     $page->setTpl("category", [
         "category" => $category->getValues(),
-        "products" => []
+        "products" => Product::checkList($category->getProducts())
     ]);
 });
 

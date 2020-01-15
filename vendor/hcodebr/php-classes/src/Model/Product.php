@@ -129,7 +129,7 @@ class Product extends Model
 
             switch ($extension) {
 
-                //case "jpg":
+                case "jpg":
 
                 case "jpeg":
                     $image = imagecreatefromjpeg($file["tmp_name"]);
