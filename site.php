@@ -61,6 +61,24 @@ $app->get("/category/:idcategory", function($idcategory) {
     ]);
 });
 
+$app->get("/product/:desurl", function($desurl) {
+
+    $product = new Product();
+
+    $product->getFromURL($desurl);
+
+    $category = new Category();
+
+    //$category->get((int)$idcategory);
+
+    $page = new Page();
+
+    $page->setTpl("product-detail", [
+        'product' => $product->getValues(),
+        'categories' => $product->getCategories()
+    ]);
+});
+
 /*
  * Páginas do Site - FIM
  * #############################################
