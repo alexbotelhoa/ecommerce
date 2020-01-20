@@ -10,13 +10,12 @@ namespace Hcode\Model;
 
 use Hcode\DB\Sql;
 use Hcode\Model;
-use Hcode\Model\User;
 
 class Cart extends Model
 {
 
     const SESSION = "Cart";
-    const SESSION_ERROR = "CartError";
+    const ERROR = "CartError";
 
     public function save()
     {
@@ -89,15 +88,14 @@ class Cart extends Model
     public static function setMsgError($msg)
     {
 
-        $_SESSION[Cart::SESSION_ERROR] = $msg;
+        $_SESSION[Cart::ERROR] = $msg;
 
     }
-
 
     public static function getMsgError()
     {
 
-         $msg = (isset($_SESSION[Cart::SESSION_ERROR])) ? $_SESSION[Cart::SESSION_ERROR] : "";
+         $msg = (isset($_SESSION[Cart::ERROR])) ? $_SESSION[Cart::ERROR] : "";
 
         Cart::clearMsgError();
 
@@ -105,17 +103,16 @@ class Cart extends Model
 
     }
 
-
     public static function clearMsgError()
     {
 
-        $_SESSION[Cart::SESSION_ERROR] = NULL;
+        $_SESSION[Cart::ERROR] = NULL;
 
     }
 
-/****************************************************************************************/
-//                                  FIM DAS CONSTANTES                                  //
-/****************************************************************************************/
+/**************************************************************************************/
+//                                  FIM DOS STATICOS                                  //
+/**************************************************************************************/
 
     public function setToSession()
     {
