@@ -14,11 +14,13 @@ use Hcode\Mailer;
 
 class User extends Model
 {
+
     const SESSION = "User";
     const SECRET = "HcodePhp7_Secret";
     const DESECRET = "HcodePhp7_Secret";
     const ERROR = "UserError";
     const ERROR_REGISTER = "UserError";
+    const SUCCESS = "UserSuccess";
 
     public static function login($login, $password)
     {
@@ -38,8 +40,6 @@ class User extends Model
         if (password_verify($password, $data["despassword"]) === true) {
 
             $user = new User();
-
-            $data['desperson'] = utf8_encode($data['desperson']);
 
             $user->setData($data);
 
@@ -93,7 +93,7 @@ class User extends Model
 
     }
 
-    public static function getForgot($email)
+    public static function getForgot($email, $inadmin = true)
     {
 
         $sql = new Sql();
@@ -132,7 +132,15 @@ class User extends Model
                 //$code = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_128, User::SECRET, $dataRecovery["idrecovery"], MCRYPT_MODE_ECB));
                 $code = base64_encode(openssl_encrypt($dataRecovery["idrecovery"], 'AES-128-CBC', User::SECRET, 0, User::DESECRET));
 
-                $link = "http://www.abaecommerce.com.br/admin/forgot/reset?code=$code";
+                if ($inadmin === true) {
+
+                    $link = "http://www.abaecommerce.com.br/admin/forgot/reset?code=$code";
+
+                } else {
+
+                    $link = "http://www.abaecommerce.com.br/forgot/reset?code=$code";
+
+                }
 
                 $mailer = new Mailer($data["desemail"], $data["desperson"], "Recuperação de Senha", "forgot", array(
                    "name" => $data["desperson"],
@@ -195,6 +203,8 @@ class User extends Model
             $user->setData($_SESSION[User::SESSION]);
 
         }
+
+        $user->get((int)$user->getidperson());
 
         return $user;
 
@@ -262,10 +272,71 @@ class User extends Model
 
     }
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+    public static function setSuccess($msg)
+    {
+
+        $_SESSION[User::SUCCESS] = $msg;
+
+    }
+
+    public static function getSuccess()
+    {
+
+        $msg = (isset($_SESSION[User::SUCCESS]) && $_SESSION[User::SUCCESS]) ? $_SESSION[User::SUCCESS] : "";
+
+        User::clearSuccess();
+
+        return $msg;
+
+    }
+
+    public static function clearSuccess()
+    {
+
+        $_SESSION[User::SUCCESS] = NULL;
+
+    }
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
     public static function setErrorRegister($msg)
     {
 
         $_SESSION[User::ERROR_REGISTER] = $msg;
+
+    }
+
+    public static function getErrorRegister()
+    {
+
+        $msg = (isset($_SESSION[User::ERROR_REGISTER]) && $_SESSION[User::ERROR_REGISTER]) ? $_SESSION[User::ERROR_REGISTER] : "";
+
+        User::clearErrorRegister();
+
+        return $msg;
+
+    }
+
+    public static function clearErrorRegister()
+    {
+
+        $_SESSION[User::ERROR_REGISTER] = NULL;
+
+    }
+
+    public static function checkLoginExist($login)
+    {
+
+        $sql = new Sql();
+
+        $result = $sql->select("SELECT * FROM tb_users WHERE deslogin = :DESLOGIN", array(
+           ":DESLOGIN" => $login
+        ));
+
+        return (count($result) > 0);
 
     }
 
@@ -358,41 +429,5 @@ class User extends Model
         ));
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public function getPerson()
-    {
-
-        $sql = new Sql();
-
-        $result = $sql->select("SELECT * FROM tb_persons WHERE idperson = :IDPERSON", array(
-            ":IDPERSON" => "1"
-        ));
-
-        return $result[0]['desperson'];
-
-    }
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
 
 }

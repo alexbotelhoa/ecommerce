@@ -5,6 +5,8 @@ use Hcode\Model\User;
 function formatPrice($vlprice)
 {
 
+    if (!$vlprice > 0) $vlprice = 0;
+
     return number_format((float)$vlprice, 2, ",", ".");
 
 }
@@ -21,9 +23,7 @@ function getUserName()
 
     $user = User::getFromSession();
 
-    $user->get((int)$user->getidperson());
-
-    return $user->getdesperson();
+    return utf8_decode($user->getdesperson());
 
 }
 
