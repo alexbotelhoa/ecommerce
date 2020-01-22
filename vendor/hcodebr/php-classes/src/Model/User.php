@@ -266,8 +266,6 @@ class User extends Model
 
     }
 
-
-////////////////////////////////////////////////////////////////////////////////////////////
     public static function setSuccess($msg)
     {
 
@@ -292,9 +290,6 @@ class User extends Model
         $_SESSION[User::SUCCESS] = NULL;
 
     }
-////////////////////////////////////////////////////////////////////////////////////////////
-
-
 
     public static function setErrorRegister($msg)
     {
@@ -421,6 +416,28 @@ class User extends Model
         $sql->query("CALL sp_users_delete(:iduser)", array(
             ":iduser" => $this->getiduser()
         ));
+
+    }
+
+    public function getOrders()
+    {
+
+        $sql = new Sql();
+
+        $result = $sql->select("
+            SELECT * 
+            FROM tb_orders a 
+            INNER JOIN tb_ordersstatus b USING(idstatus)
+            INNER JOIN tb_carts c USING(idcart)
+            INNER JOIN tb_users d ON d.iduser = a.iduser
+            INNER JOIN tb_addresses e USING(idaddress) 
+            INNER JOIN tb_persons f ON f.idperson = d.idperson
+            WHERE a.iduser = :IDUSER 
+        ", [
+            ":IDUSER" => $this->getiduser()
+        ]);
+
+        return $result;
 
     }
 
