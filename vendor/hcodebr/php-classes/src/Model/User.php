@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Alex Botelho
- * Date: 27/12/2019
- * Time: 09:07
- */
 
 namespace Hcode\Model;
 
