@@ -74,7 +74,7 @@ class User extends Model
         $_SESSION[User::SESSION] = NULL;
 
         //Teste
-        $_SESSION[Cart::SESSION] = NULL;
+        //$_SESSION[Cart::SESSION] = NULL;
 
     }
 

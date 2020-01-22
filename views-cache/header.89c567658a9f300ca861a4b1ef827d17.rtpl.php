@@ -376,6 +376,16 @@
                 </li>
                 <!-- /.Acrescentado em 08/01/2020 -->
 
+                <!-- Acrescentado em 22/01/2020 -->
+                <li class="treeview">
+                    <a href="/admin/orders">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>Pedidos</span>
+                        <span class="pull-right-container"></span>
+                    </a>
+                </li>
+                <!-- /.Acrescentado em 22/01/2020 -->
+
 
 
 

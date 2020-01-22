@@ -538,7 +538,7 @@ $app->get("/profile/orders/:idorder", function ($idorder) {
 
     $cart->get((int)$order->getidcart());
 
-    $cart->getCalculateTotal();
+    //$cart->getCalculateTotal();
 
     $page = new Page();
 

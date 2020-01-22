@@ -33,6 +33,12 @@
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
+    <?php if( $error != '' ){ ?>
+      <div class="alert alert-danger">
+        <?php echo htmlspecialchars( $error, ENT_COMPAT, 'UTF-8', FALSE ); ?>
+      </div>
+    <?php } ?>
+
     <form action="/admin/login" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Login" name="login">
