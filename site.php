@@ -332,11 +332,33 @@ $app->post("/checkout", function () {
 
     $order->save();
 
-    header("Location: /order/" . $order->getidorder());
+    switch ((int)($_POST['payment-method'])) {
+
+        case 1:
+
+            header("Location: /order/" . $order->getidorder() . "/boleto");
+
+            break;
+
+        case 2:
+
+            header("Location: /order/" . $order->getidorder() . "/pagseguro");
+
+            break;
+
+        case 3:
+
+            header("Location: /order/" . $order->getidorder() . "/paypal");
+
+            break;
+
+    }
 
     exit;
 
 });
+
+
 
 /*
  * ##########################################################################################
@@ -551,8 +573,6 @@ $app->get("/profile/orders/:idorder", function ($idorder) {
 
     $cart->get((int)$order->getidcart());
 
-    //$cart->getCalculateTotal();
-
     $page = new Page();
 
     $page->setTpl("profile-orders-detail", array(
@@ -715,7 +735,7 @@ $app->post("/forgot/reset", function () {
  * Pagamento - INICIO
  */
 
-$app->get("/order/:idorder", function($idorder){
+$app->get("/order/:idorder/boleto", function($idorder){
 
     User::getFromSession();
 
@@ -801,5 +821,64 @@ $app->get("/boleto/:idorder", function($idorder){
     require_once ($path . "layout_itau.php");
 
 });
+
+$app->get("/order/:idorder/pagseguro", function($idorder){
+
+    User::verifyLogin(false);
+
+    $order = new Order();
+
+    $order->get((int)$idorder);
+
+    $cart = new Cart();
+
+    $cart->get((int)$order->getidcart());
+
+    $page = new Page([
+        "header" => false,
+        "footer" => false
+    ]);
+
+    $page->setTpl("payment-pagseguro", [
+        "order" => $order->getValues(),
+        "cart" => $cart->getValues(),
+        "products" => $cart->getProducts(),
+        "phone" => [
+            "areaCode" => substr($order->getnrphone(), 0, 2),
+            "number" => substr($order->getnrphone(), 2, strlen($order->getnrphone()))
+        ]
+    ]);
+
+});
+
+$app->get("/order/:idorder/paypal", function($idorder){
+
+    User::verifyLogin(false);
+
+    $order = new Order();
+
+    $order->get((int)$idorder);
+
+    $cart = new Cart();
+
+    $cart->get((int)$order->getidcart());
+
+    $page = new Page([
+        "header" => false,
+        "footer" => false
+    ]);
+
+    $page->setTpl("payment-paypal", [
+        "order" => $order->getValues(),
+        "cart" => $cart->getValues(),
+        "products" => $cart->getProducts()
+    ]);
+
+});
+
+
+
+
+
 
 ?>
