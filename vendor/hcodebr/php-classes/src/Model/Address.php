@@ -60,10 +60,11 @@ class Address extends Model
 
         $sql = new Sql();
 
-        $result = $sql->select("CALL sp_addresses_save(:idaddress, :idperson, :desaddress, :descomplement, :desdistrict, :descity, :desstate, :descountry, :deszipcode)", array(
+        $result = $sql->select("CALL sp_addresses_save(:idaddress, :idperson, :desaddress, :desnumber, :descomplement, :desdistrict, :descity, :desstate, :descountry, :deszipcode)", array(
             ":idaddress" => $this->getidaddress(),
             ":idperson" => $this->getidperson(),
             ":desaddress" => utf8_decode($this->getdesaddress()),
+            ":desnumber" => $this->getdesnumber(),
             ":descomplement" => utf8_decode($this->getdescomplement()),
             ":desdistrict" => utf8_decode($this->getdesdistrict()),
             ":descity" => utf8_decode($this->getdescity()),

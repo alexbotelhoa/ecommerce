@@ -210,6 +210,7 @@ $app->get("/checkout", function() {
     }
 
     if (!$address->getdesaddress()) $address->setdesaddress('');
+    if (!$address->getdesnumber()) $address->setdesnumber('');
     if (!$address->getdescomplement()) $address->setdescomplement('');
     if (!$address->getdesdistrict()) $address->setdesdistrict('');
     if (!$address->getdescity()) $address->setdescity('');
@@ -235,6 +236,16 @@ $app->post("/checkout", function () {
     if (!isset($_POST['desaddress']) || $_POST['desaddress'] == '') {
 
         Address::setMsgError("Informe o Endereço.");
+
+        header("Location: /checkout");
+
+        exit;
+
+    }
+
+    if (!isset($_POST['desnumber']) || $_POST['desnumber'] == '') {
+
+        Address::setMsgError("Informe o Número.");
 
         header("Location: /checkout");
 
@@ -300,6 +311,8 @@ $app->post("/checkout", function () {
     $_POST['deszipcode'] = $_POST['zipcode'];
 
     $address->setData($_POST);
+
+    //var_dump($address); exit;
 
     $address->save();
 
@@ -743,7 +756,7 @@ $app->get("/boleto/:idorder", function($idorder){
 
 // DADOS DO SEU CLIENTE
     $dadosboleto["sacado"] = $order->getdesperson();
-    $dadosboleto["endereco1"] = $order->getdesaddress() . " " . $order->getdesdistrict();
+    $dadosboleto["endereco1"] = $order->getdesaddress() . ", " . $order->getdesnumber() . ", " . $order->getdesdistrict();
     $dadosboleto["endereco2"] = $order->getdescity() . " - " . $order->getdesstate() . " - " . $order->getdescountry() . " - CEP: " . $order->getdeszipcode();
 
 // INFORMACOES PARA O CLIENTE
