@@ -16,18 +16,17 @@ $app->get("/admin/users", function () {
 
     $page = (isset($_GET['page'])) ? (int)$_GET['page'] : 1;
 
-    $pagination = User::getUsersPage($page, $search, 5);
+    $pagination = User::getPage($page, $search, 5);
 
     $pages = [];
 
-    for ($x = 0; $x < $pagination['pages']; $x++)
-    {
+    for ($x = 0; $x < $pagination['pages']; $x++) {
 
         array_push($pages, [
             "href" => '/admin/users?' . http_build_query([
-                "page" => $x + 1,
-                "search" => $search
-            ]),
+                    "page" => $x + 1,
+                    "search" => $search
+                ]),
             "text" => $x + 1
         ]);
 

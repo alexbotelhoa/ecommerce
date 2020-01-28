@@ -169,4 +169,33 @@ class Category extends Model
 
     }
 
+    public static function getPage($page, $search, $itemsPerPage)
+    {
+
+        $start = ($page - 1) * $itemsPerPage;
+
+        ($search != "") ? $likes = "WHERE descategory LIKE :search" : $likes = " ";
+
+        $sql = new Sql();
+
+        $resultUsers = $sql->select("
+            SELECT SQL_CALC_FOUND_ROWS *
+            FROM tb_categories 
+            $likes
+            ORDER BY descategory
+            LIMIT $start, $itemsPerPage
+        ", [
+            ":search" => "%" . $search . "%"
+        ]);
+
+        $resultTotal = $sql->select("SELECT FOUND_ROWS() AS nrtotal");
+
+        return [
+            'data' => $resultUsers,
+            'total' => (int)$resultTotal[0]['nrtotal'],
+            'pages' => ceil($resultTotal[0]['nrtotal'] / $itemsPerPage)
+        ];
+
+    }
+
 }

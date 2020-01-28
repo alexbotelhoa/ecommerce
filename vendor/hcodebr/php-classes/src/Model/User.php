@@ -441,7 +441,7 @@ class User extends Model
 
     }
 
-    public static function getUsersPage($page, $search, $itemsPerPage)
+    public static function getPage($page, $search, $itemsPerPage)
     {
 
         $start = ($page - 1) * $itemsPerPage;
