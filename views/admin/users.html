@@ -56,6 +56,10 @@
                         <a href="/admin/users/{$value.iduser}/delete" onclick="return confirm('Deseja realmente excluir este registro?')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
                       </td>
                     </tr>
+                    {else}
+                    <tr>
+                      <td colspan="6">Nenhum Usuário foi encontrado.</td>
+                    </tr>
                     {/loop}
                   </tbody>
                 </table>

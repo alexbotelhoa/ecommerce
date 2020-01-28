@@ -52,6 +52,10 @@
                       <a href="/admin/categories/{$value.idcategory}/delete" onclick="return confirm('Deseja realmente excluir este registro?')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
                     </td>
                   </tr>
+                  {else}
+                  <tr>
+                    <td colspan="6">Nenhuma Categoria foi encontrado.</td>
+                  </tr>
                   {/loop}
                 </tbody>
               </table>

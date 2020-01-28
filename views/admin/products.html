@@ -61,6 +61,10 @@
                       <a href="/admin/products/{$value.idproduct}/delete" onclick="return confirm('Deseja realmente excluir este registro?')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
                     </td>
                   </tr>
+                  {else}
+                  <tr>
+                    <td colspan="6">Nenhum Produto foi encontrado.</td>
+                  </tr>
                   {/loop}
                 </tbody>
               </table>
