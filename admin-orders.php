@@ -6,25 +6,21 @@ use Hcode\Model\Order;
 use Hcode\Model\OrderStatus;
 use Hcode\Model\Cart;
 
-/*
- * #############################################
- * Páginas de Ordem de Pagamento - INICIO
- */
 
-$app->get("/eco/admin/orders/:idorder/status", function($idorder) {
+########################################################################################################################
+# Páginas de Ordem de Pagamento - INICIO
+
+$app->get("/eco/admin/orders/:idorder/status", function ($idorder) {
 
     User::verifyLogin();
 
     $order = new Order();
-
     $order->get((int)$idorder);
 
     $cart = new Cart();
-
     $cart->get((int)$order->getidcart());
 
     $page = new PageAdmin();
-
     $page->setTpl("order-status", [
         "order" => $order->getValues(),
         "status" => OrderStatus::listAll(),
@@ -34,66 +30,52 @@ $app->get("/eco/admin/orders/:idorder/status", function($idorder) {
 
 });
 
-$app->post("/eco/admin/orders/:idorder/status", function($idorder) {
+$app->post("/eco/admin/orders/:idorder/status", function ($idorder) {
 
     User::verifyLogin();
 
     if (!isset($_POST['idstatus']) || !(int)$_POST['idstatus'] > 0) {
-
         Order::setError("Informe o status atual.");
-
-        header("Location: /admin/orders/" . $idorder . "/status");
-
+        header("Location: /eco/admin/orders/" . $idorder . "/status");
         exit;
-
     }
 
     $order = new Order();
-
     $order->get((int)$idorder);
-
     $order->setidstatus((int)$_POST['idstatus']);
-
     $order->save();
 
     Order::setSuccess("Status atualizado.");
 
-    header("Location: /admin/orders/" . $idorder . "/status");
-
+    header("Location: /eco/admin/orders/" . $idorder . "/status");
     exit;
 
 });
 
-$app->get("/eco/admin/orders/:idorder/delete", function($idorder) {
+$app->get("/eco/admin/orders/:idorder/delete", function ($idorder) {
 
     User::verifyLogin();
 
     $order = new Order();
-
     $order->get((int)$idorder);
-
     $order->delete();
 
-    header("Location: /admin/orders");
-
+    header("Location: /eco/admin/orders");
     exit;
 
 });
 
-$app->get("/eco/admin/orders/:idorder", function($idorder) {
+$app->get("/eco/admin/orders/:idorder", function ($idorder) {
 
     User::verifyLogin();
 
     $order = new Order();
-
     $order->get((int)$idorder);
 
     $cart = new Cart();
-
     $cart->get((int)$order->getidcart());
 
     $page = new PageAdmin();
-
     $page->setTpl("order", [
         "order" => $order->getValues(),
         "products" => $cart->getProducts(),
@@ -102,7 +84,7 @@ $app->get("/eco/admin/orders/:idorder", function($idorder) {
 
 });
 
-$app->get("/eco/admin/orders", function() {
+$app->get("/eco/admin/orders", function () {
 
     User::verifyLogin();
 
@@ -115,19 +97,16 @@ $app->get("/eco/admin/orders", function() {
     $pages = [];
 
     for ($x = 0; $x < $pagination['pages']; $x++) {
-
         array_push($pages, [
-            "href" => '/admin/orders?' . http_build_query([
+            "href" => '/eco/admin/orders?' . http_build_query([
                     "page" => $x + 1,
                     "search" => $search
                 ]),
             "text" => $x + 1
         ]);
-
     }
 
     $page = new PageAdmin();
-
     $page->setTpl("orders", [
         "orders" => $pagination['data'],
         "search" => $search,
@@ -135,10 +114,5 @@ $app->get("/eco/admin/orders", function() {
     ]);
 
 });
-
-/*
- * Páginas de Ordem de Pagamento - FIM
- * #############################################
- */
 
 ?>

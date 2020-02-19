@@ -1,5 +1,4 @@
 <div class="slider-area">
-    <!-- Slider -->
     <div class="block-slider block-slider4">
         <ul class="" id="bxslider-home4">
             <li>
@@ -41,11 +40,8 @@
             </li>
         </ul>
     </div>
-    <!-- ./Slider -->
-</div> <!-- End slider area -->
-
+</div>
 <div class="promo-area">
-    <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-6">
@@ -74,58 +70,53 @@
             </div>
         </div>
     </div>
-</div> <!-- End promo area -->
-
+</div>
 <div class="maincontent-area">
-    <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="latest-product">
                     <h2 class="section-title">Produto</h2>
                     <div class="product-carousel">
-
                         {loop="$products"}
-                            <div class="single-product">
-                                <div class="product-f-image">
-                                    <img src="{$value.desphoto}" alt="">
-                                    <div class="product-hover">
-                                        <a href="/cart/{$value.idproduct}/add" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
-                                        <a href="/product/{$value.desurl}" class="view-details-link"><i class="fa fa-link"></i> Ver Detalhes</a>
-                                    </div>
-                                </div>
-                                <h2><a href="/product/{$value.desurl}">{$value.desproduct}</a></h2>
-                                <div class="product-carousel-price">
-                                    <ins>R$ {function="formatPrice($value.vlprice)"}</ins> <del>R$ {function="formatPrice($value.vlprice * 1.3)"}</del>
+                        <div class="single-product">
+                            <div class="product-f-image">
+                                <img src="{$value.desphoto}" alt="">
+                                <div class="product-hover">
+                                    <a href="/eco/cart/{$value.idproduct}/add" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                    <a href="/eco/product/{$value.desurl}" class="view-details-link"><i class="fa fa-link"></i> Ver Detalhes</a>
                                 </div>
                             </div>
+                            <h2><a href="/eco/product/{$value.desurl}">{$value.desproduct}</a></h2>
+                            <div class="product-carousel-price">
+                                <ins>R$ {function="formatPrice($value.vlprice)"}</ins>
+                                <del>R$ {function="formatPrice($value.vlprice * 1.3)"}</del>
+                            </div>
+                        </div>
                         {/loop}
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div> <!-- End main content area -->
-
+</div>
 <div class="brands-area">
-    <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="brand-wrapper">
                     <div class="brand-list">
-                        <img src="res/site/img/brand1.png" alt="">
-                        <img src="res/site/img/brand2.png" alt="">
-                        <img src="res/site/img/brand3.png" alt="">
-                        <img src="res/site/img/brand4.png" alt="">
-                        <img src="res/site/img/brand5.png" alt="">
-                        <img src="res/site/img/brand6.png" alt="">
-                        <img src="res/site/img/brand1.png" alt="">
-                        <img src="res/site/img/brand2.png" alt="">
+                        <img src="/ecommerce/res/site/img/brand1.png" alt="">
+                        <img src="/ecommerce/res/site/img/brand2.png" alt="">
+                        <img src="/ecommerce/res/site/img/brand3.png" alt="">
+                        <img src="/ecommerce/res/site/img/brand4.png" alt="">
+                        <img src="/ecommerce/res/site/img/brand5.png" alt="">
+                        <img src="/ecommerce/res/site/img/brand6.png" alt="">
+                        <img src="/ecommerce/res/site/img/brand1.png" alt="">
+                        <img src="/ecommerce/res/site/img/brand2.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div> <!-- End brands area -->
+</div>

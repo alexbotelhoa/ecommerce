@@ -3,38 +3,31 @@
 use Hcode\Model\PageAdmin;
 use Hcode\Model\User;
 
-/*
- * #############################################
- * Páginas de Login - INICIO
- */
 
-$app->get("/eco/admin/login", function() {
+########################################################################################################################
+# Páginas de Login - INICIO
+
+$app->get("/eco/admin/login", function () {
 
     $page = new PageAdmin([
         "header" => false,
         "footer" => false
     ]);
-
     $page->setTpl("login", [
         "error" => User::getError(),
     ]);
 
 });
 
-$app->post("/eco/admin/login", function() {
+$app->post("/eco/admin/login", function () {
 
     try {
-
         User::login($_POST['login'], $_POST['password']);
-
-    } catch(Exception $e) {
-
+    } catch (Exception $e) {
         User::setError($e->getMessage());
-
     }
 
-    header("Location: /admin");
-
+    header("Location: /eco/admin");
     exit;
 
 });
@@ -43,15 +36,9 @@ $app->get("/eco/admin/logout", function () {
 
     User::logout();
 
-    header("Location: /admin/login");
-
+    header("Location: /eco/admin/login");
     exit;
 
 });
-
-/*
- * Páginas de Login - FIM
- * #############################################
- */
 
 ?>

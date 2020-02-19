@@ -5,12 +5,11 @@ use Hcode\Model\User;
 use Hcode\Model\Category;
 use Hcode\Model\Product;
 
-/*
- * ##########################################
- * Páginas de Administradção de Categorias - INICIO
- */
 
-$app->get("/eco/admin/categories", function(){
+########################################################################################################################
+# Páginas de Administradção de Categorias - INICIO
+
+$app->get("/eco/admin/categories", function () {
 
     User::verifyLogin();
 
@@ -23,19 +22,16 @@ $app->get("/eco/admin/categories", function(){
     $pages = [];
 
     for ($x = 0; $x < $pagination['pages']; $x++) {
-
         array_push($pages, [
-            "href" => '/admin/categories?' . http_build_query([
+            "href" => '/eco/admin/categories?' . http_build_query([
                     "page" => $x + 1,
                     "search" => $search
                 ]),
             "text" => $x + 1
         ]);
-
     }
 
     $page = new PageAdmin();
-
     $page->setTpl("categories", [
         "categories" => $pagination['data'],
         "search" => $search,
@@ -44,28 +40,24 @@ $app->get("/eco/admin/categories", function(){
 
 });
 
-$app->get("/eco/admin/categories/create", function(){
+$app->get("/eco/admin/categories/create", function () {
 
     User::verifyLogin();
 
     $page = new PageAdmin();
-
     $page->setTpl("categories-create");
 
 });
 
-$app->post("/eco/admin/categories/create", function(){
+$app->post("/eco/admin/categories/create", function () {
 
     User::verifyLogin();
 
     $category = new Category();
-
     $category->setData($_POST);
-
     $category->save();
 
-    header("Location: /admin/categories");
-
+    header("Location: /eco/admin/categories");
     exit;
 
 });
@@ -75,61 +67,50 @@ $app->get("/eco/admin/categories/:idcategory", function ($idcategory) {
     User::verifyLogin();
 
     $category = new Category();
-
     $category->get((int)$idcategory);
 
     $page = new PageAdmin();
-
     $page->setTpl("categories-update", array(
         "category" => $category->getValues()
     ));
 
 });
 
-$app->post("/eco/admin/categories/:idcategory", function($idcategory) {
+$app->post("/eco/admin/categories/:idcategory", function ($idcategory) {
 
     User::verifyLogin();
 
     $category = new Category();
-
     $category->get((int)$idcategory);
-
     $category->setData($_POST);
-
     $category->save();
 
-    header("Location: /admin/categories");
-
+    header("Location: /eco/admin/categories");
     exit;
 
 });
 
-$app->get("/eco/admin/categories/:idcategory/delete", function($idcategory) {
+$app->get("/eco/admin/categories/:idcategory/delete", function ($idcategory) {
 
     User::verifyLogin();
 
     $category = new Category();
-
     $category->get((int)$idcategory);
-
     $category->delete();
 
-    header("Location: /admin/categories");
-
+    header("Location: /eco/admin/categories");
     exit;
 
 });
 
-$app->get("/eco/admin/categories/:idcategory/products", function($idcategory) {
+$app->get("/eco/admin/categories/:idcategory/products", function ($idcategory) {
 
     User::verifyLogin();
 
     $category = new Category();
-
     $category->get((int)$idcategory);
 
     $page = new PageAdmin();
-
     $page->setTpl("categories-products", array(
         "category" => $category->getValues(),
         "productsRelated" => $category->getProducts(),
@@ -138,49 +119,36 @@ $app->get("/eco/admin/categories/:idcategory/products", function($idcategory) {
 
 });
 
-$app->get("/eco/admin/categories/:idcategory/products/:idproduct/add", function($idcategory, $idproduct) {
+$app->get("/eco/admin/categories/:idcategory/products/:idproduct/add", function ($idcategory, $idproduct) {
 
     User::verifyLogin();
 
-    $category = new Category();
-
-    $category->get((int)$idcategory);
-
     $product = new Product();
-
     $product->get((int)$idproduct);
 
+    $category = new Category();
+    $category->get((int)$idcategory);
     $category->addProduct($idproduct);
 
-    header("Location: /admin/categories/" . $idcategory . "/products");
-
+    header("Location: /eco/admin/categories/" . $idcategory . "/products");
     exit;
 
 });
 
-$app->get("/eco/admin/categories/:idcategory/products/:idproduct/remove", function($idcategory, $idproduct) {
+$app->get("/eco/admin/categories/:idcategory/products/:idproduct/remove", function ($idcategory, $idproduct) {
 
     User::verifyLogin();
 
-    $category = new Category();
-
-    $category->get((int)$idcategory);
-
     $product = new Product();
-
     $product->get((int)$idproduct);
 
+    $category = new Category();
+    $category->get((int)$idcategory);
     $category->removeProduct($idproduct);
 
-    header("Location: /admin/categories/" . $idcategory . "/products");
-
+    header("Location: /eco/admin/categories/" . $idcategory . "/products");
     exit;
 
 });
-
-/*
- * Páginas de Administração de Categorias - FIM
- * ##########################################
- */
 
 ?>

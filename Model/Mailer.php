@@ -8,17 +8,16 @@ class Mailer
 {
 
     const USERNAME = "alexbotelho1@hotmail.com";
-    const PASSWORD = "W3bM@5t3r2";
+    const PASSWORD = "-";
     const NAME_FROM = "ABA ecommerce";
 
     private $mail;
 
     public function __construct($toAddress, $toName, $subject, $tplName, $data = array())
     {
-
         $config = array(
-            "tpl_dir" => $_SERVER["DOCUMENT_ROOT"] . "/views/email/",
-            "cache_dir" => $_SERVER["DOCUMENT_ROOT"] . "/views-cache/",
+            "tpl_dir" => $_SERVER["DOCUMENT_ROOT"] . "/ecommercer/app/views/email/",
+            "cache_dir" => $_SERVER["DOCUMENT_ROOT"] . "/ecommercer/app/views/cache/",
             "debug" => false
         );
 
@@ -32,7 +31,7 @@ class Mailer
 
         $html = $tpl->draw($tplName, true);
 
-        $this->mail = new \PHPMailer;
+        $this->mail = new PHPMailer;
 
         //Tell PHPMailer to use SMTP
         $this->mail->isSMTP();
@@ -81,17 +80,13 @@ class Mailer
 
         //Attach an image file
         //$mail->addAttachment('images/phpmailer_mini.png');
-
     }
 
     public function send()
     {
-
         return $this->mail->send();
-
     }
 
 }
-
 
 ?>

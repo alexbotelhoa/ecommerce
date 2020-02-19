@@ -14,11 +14,11 @@ class Model
 
         switch ($nameMethod) {
             case "get":
-                return (isset($this->value[$fieldName])) ? $this->value[$fieldName] : NULL;
-            break;
+                return (isset($this->value[$fieldName])) ? $this->value[$fieldName] : null;
+                break;
             case "set":
                 $this->value[$fieldName] = $arguments[0];
-            break;
+                break;
         }
 
     }

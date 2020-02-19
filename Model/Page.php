@@ -14,13 +14,6 @@ class Page
         "data" => []
     ];
 
-    private function setData($data = array())
-    {
-        foreach ($data as $key => $value) {
-            $this->tpl->assign($key, $value);
-        }
-    }
-
     public function __construct($opts = array(), $tlp_dir = "/ecommerce/app/views/site/")
     {
         $this->options = array_merge($this->default, $opts);
@@ -35,11 +28,17 @@ class Page
         Tpl::configure($config);
 
         $this->tpl = new Tpl();
-
         $this->setData($this->options["data"]);
 
         if ($this->options["header"] === true) $this->tpl->draw("header");
 
+    }
+
+    private function setData($data = array())
+    {
+        foreach ($data as $key => $value) {
+            $this->tpl->assign($key, $value);
+        }
     }
 
     public function setTpl($name, $data = array(), $returnHTML = false)
@@ -53,4 +52,5 @@ class Page
     {
         if ($this->options["footer"] === true) $this->tpl->draw("footer");
     }
+
 }
