@@ -21,13 +21,13 @@
                         <div class="product-upper">
                             <img src="{$value.desphoto}" alt="">
                         </div>
-                        <h2><a href="/product/{$value.desurl}">{$value.desproduct}</a></h2>
+                        <h2><a href="/eco/product/{$value.desurl}">{$value.desproduct}</a></h2>
                         <div class="product-carousel-price">
                             <ins>R$ {function="formatPrice($value.vlprice)"}</ins> <del>R$ {function="formatPrice($value.vlprice * 1.3)"}</del>
                         </div>
 
                         <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/cart/{$value.idproduct}/add">Comprar</a>
+                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/eco/cart/{$value.idproduct}/add">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                         <ul class="pagination">
 
                             {loop="$pages"}
-                                <li><a href="{$value.link}">{$value.page}</a></li>
+                                <li><a href="/eco{$value.link}">{$value.page}</a></li>
                             {/loop}
 
                         </ul>
