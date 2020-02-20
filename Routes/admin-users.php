@@ -54,7 +54,7 @@ $app->post("/eco/admin/users/create", function () {
 
     $user = new User();
     $user->setData($_POST);
-    $user->create();
+    if ($_SESSION['DEMOECO'] === true) $user->create();
 
     header("Location: /eco/admin/users");
     exit;
@@ -84,7 +84,7 @@ $app->post("/eco/admin/users/:iduser", function ($iduser) {
     $user = new User();
     $user->get((int)$iduser);
     $user->setData($_POST);
-    $user->update();
+    //$user->update();
 
     header("Location: /eco/admin/users");
     exit;
@@ -146,7 +146,7 @@ $app->get("/eco/admin/users/:iduser/delete", function ($iduser) {
 
     $user = new User();
     $user->get((int)$iduser);
-    $user->delete();
+    if ($_SESSION['DEMOECO'] === true) $user->delete();
 
     header("Location: /eco/admin/users");
     exit;

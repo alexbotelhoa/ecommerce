@@ -53,7 +53,7 @@ $app->post("/eco/admin/products/create", function () {
 
     $product = new Product();
     $product->setData($_POST);
-    $product->save();
+    if ($_SESSION['DEMOECO'] === true) $product->save();
 
     header("Location: /eco/admin/products");
     exit;
@@ -81,7 +81,7 @@ $app->post("/eco/admin/products/:idproduct", function ($idproduct) {
     $product = new Product();
     $product->get((int)$idproduct);
     $product->setData($_POST);
-    $product->save();
+    if ($_SESSION['DEMOECO'] === true) $product->save();
     $product->setPhoto($_FILES["file"]);
 
     header("Location: /eco/admin/products");
@@ -95,7 +95,7 @@ $app->get("/eco/admin/products/:idproduct/delete", function ($idproduct) {
 
     $product = new Product();
     $product->get((int)$idproduct);
-    $product->delete();
+    if ($_SESSION['DEMOECO'] === true) $product->delete();
 
     header("Location: /eco/admin/products");
     exit;

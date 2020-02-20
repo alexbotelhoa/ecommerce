@@ -55,7 +55,7 @@ $app->post("/eco/admin/categories/create", function () {
 
     $category = new Category();
     $category->setData($_POST);
-    $category->save();
+    if ($_SESSION['DEMOECO'] === true) $category->save();
 
     header("Location: /eco/admin/categories");
     exit;
@@ -83,7 +83,7 @@ $app->post("/eco/admin/categories/:idcategory", function ($idcategory) {
     $category = new Category();
     $category->get((int)$idcategory);
     $category->setData($_POST);
-    $category->save();
+    if ($_SESSION['DEMOECO'] === true) $category->save();
 
     header("Location: /eco/admin/categories");
     exit;
@@ -96,7 +96,7 @@ $app->get("/eco/admin/categories/:idcategory/delete", function ($idcategory) {
 
     $category = new Category();
     $category->get((int)$idcategory);
-    $category->delete();
+    if ($_SESSION['DEMOECO'] === true) $category->delete();
 
     header("Location: /eco/admin/categories");
     exit;
