@@ -42,7 +42,7 @@ $app->post("/eco/admin/orders/:idorder/status", function ($idorder) {
     $order = new Order();
     $order->get((int)$idorder);
     $order->setidstatus((int)$_POST['idstatus']);
-    if ($_SESSION['DEMOECO'] === true) $order->delete();
+    if ($_SESSION['DEMOECO'] != true) $order->delete();
 
     Order::setSuccess("Status atualizado.");
 
@@ -57,7 +57,7 @@ $app->get("/eco/admin/orders/:idorder/delete", function ($idorder) {
 
     $order = new Order();
     $order->get((int)$idorder);
-    if ($_SESSION['DEMOECO'] === true) $order->delete();
+    if ($_SESSION['DEMOECO'] != true) $order->delete();
 
     header("Location: /eco/admin/orders");
     exit;

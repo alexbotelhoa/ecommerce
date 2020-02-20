@@ -175,7 +175,7 @@ $app->get("/eco/checkout", function () {
     if (isset($_GET['zipcode'])) {
         $address->loadFromCEP($_GET['zipcode']);
         $cart->setdeszipcode($_GET['zipcode']);
-        if ($_SESSION['DEMOECO'] === true) $cart->save();
+        if ($_SESSION['DEMOECO'] != true) $cart->save();
         $cart->getCalculateTotal();
     }
 
@@ -268,7 +268,7 @@ $app->post("/eco/checkout", function () {
     $_POST['deszipcode'] = $_POST['zipcode'];
 
     $address->setData($_POST);
-    if ($_SESSION['DEMOECO'] === true) $address->save();
+    if ($_SESSION['DEMOECO'] != true) $address->save();
 
     $cart = Cart::getFromSession();
 
@@ -282,7 +282,7 @@ $app->post("/eco/checkout", function () {
         "idaddress" => $address->getidaddress(),
         "vltotal" => $totals['vlprice'] + $cart->getvlfreight()
     ]);
-    if ($_SESSION['DEMOECO'] === true) $order->save();
+    if ($_SESSION['DEMOECO'] != true) $order->save();
 
     switch ((int)($_POST['payment-method'])) {
         case 1:
@@ -431,7 +431,7 @@ $app->post("/eco/register", function () {
         "despassword" => $_POST['password'],
         "nrphone" => $_POST['phone']
     ]);
-    if ($_SESSION['DEMOECO'] === true) $user->create();
+    if ($_SESSION['DEMOECO'] != true) $user->create();
 
     User::login($_POST['email'], $_POST['password']);
 
