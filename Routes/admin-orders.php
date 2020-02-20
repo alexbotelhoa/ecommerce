@@ -1,11 +1,10 @@
 <?php
 
-use Hcode\Model\PageAdmin;
 use Hcode\Model\User;
 use Hcode\Model\Order;
 use Hcode\Model\OrderStatus;
 use Hcode\Model\Cart;
-
+use Hcode\Control\PageAdmin;
 
 ########################################################################################################################
 # Páginas de Ordem de Pagamento - INICIO

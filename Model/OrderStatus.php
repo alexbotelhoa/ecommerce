@@ -2,8 +2,8 @@
 
 namespace Hcode\Model;
 
-use Hcode\DB\Sql;
 use Hcode\Model;
+use Hcode\Control\Sql;
 
 class OrderStatus extends Model
 {
@@ -16,7 +16,6 @@ class OrderStatus extends Model
     public static function listAll()
     {
         $sql = new Sql();
-
         return $sql->select("SELECT * FROM tb_ordersstatus ORDER BY desstatus");
     }
 

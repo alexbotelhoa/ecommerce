@@ -1,9 +1,9 @@
 <?php
 
-use Hcode\Model\PageAdmin;
 use Hcode\Model\User;
 use Hcode\Model\Category;
 use Hcode\Model\Product;
+use Hcode\Control\PageAdmin;
 
 
 ########################################################################################################################

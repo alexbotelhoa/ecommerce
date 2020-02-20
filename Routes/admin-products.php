@@ -1,8 +1,8 @@
 <?php
 
-use Hcode\Model\PageAdmin;
 use Hcode\Model\User;
 use Hcode\Model\Product;
+use Hcode\Control\PageAdmin;
 
 ########################################################################################################################
 # Páginas de Administradção de Produtos - INICIO

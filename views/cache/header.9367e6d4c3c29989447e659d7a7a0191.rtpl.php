@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
@@ -37,12 +37,12 @@
                         <li><a href="/eco/profile"><i class="fa fa-user"></i> Minha Conta</a></li>
                         <li><a href="#"><i class="fa fa-heart"></i> Lista de Desejos</a></li>
                         <li><a href="/eco/cart"><i class="fa fa-shopping-cart"></i> Meu Carrinho</a></li>
-                        {if="checkLogin(false)"}
-                        <li><a href="/eco/profile"><i class="fa fa-user"></i> {function="getUserName()"}</a></li>
+                        <?php if( checkLogin(false) ){ ?>
+                        <li><a href="/eco/profile"><i class="fa fa-user"></i> <?php echo getUserName(); ?></a></li>
                         <li><a href="/eco/logout"><i class="fa fa-close"></i> Logout</a></li>
-                        {else}
+                        <?php }else{ ?>
                         <li><a href="/eco/login"><i class="fa fa-lock"></i> Login</a></li>
-                        {/if}
+                        <?php } ?>
                         <li><a href="/eco/admin"><i class="fa fa-cogs"></i> Admin</a></li>
                     </ul>
                 </div>
@@ -84,8 +84,8 @@
 
             <div class="col-sm-6">
                 <div class="shopping-item">
-                    <a href="/eco/cart">Carrinho - <span class="cart-amunt">R$ {function="getCartVlPrice()"}</span> <i class="fa fa-shopping-cart"></i> <span
-                            class="product-count">{function="getCartNrQtd()"}</span></a>
+                    <a href="/eco/cart">Carrinho - <span class="cart-amunt">R$ <?php echo getCartVlPrice(); ?></span> <i class="fa fa-shopping-cart"></i> <span
+                            class="product-count"><?php echo getCartNrQtd(); ?></span></a>
                 </div>
             </div>
         </div>

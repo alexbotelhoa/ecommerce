@@ -1,6 +1,6 @@
 <?php
 
-namespace Hcode\Model;
+namespace Hcode\Control;
 
 use Rain\Tpl;
 
@@ -14,14 +14,14 @@ class Page
         "data" => []
     ];
 
-    public function __construct($opts = array(), $tlp_dir = "/ecommerce/app/views/site/")
+    public function __construct($opts = array(), $tlp_dir = "/ecommerce/app/Views/site/")
     {
         $this->options = array_merge($this->default, $opts);
 
         //Array copiado do exemple-semplie.php e modificado para localizar minhas templates nesse projeto
         $config = array(
             "tpl_dir" => $_SERVER["DOCUMENT_ROOT"] . $tlp_dir,
-            "cache_dir" => $_SERVER["DOCUMENT_ROOT"] . "/ecommerce/app/views/cache/",
+            "cache_dir" => $_SERVER["DOCUMENT_ROOT"] . "/ecommerce/app/Views/cache/",
             "debug" => false
         );
 

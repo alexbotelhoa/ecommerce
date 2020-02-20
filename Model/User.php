@@ -2,9 +2,9 @@
 
 namespace Hcode\Model;
 
-use Hcode\DB\Sql;
 use Hcode\Model;
-use Hcode\Mailer;
+use Hcode\Control\Sql;
+use Hcode\Control\Mailer;
 
 class User extends Model
 {

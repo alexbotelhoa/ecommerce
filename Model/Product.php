@@ -2,8 +2,8 @@
 
 namespace Hcode\Model;
 
-use Hcode\DB\Sql;
 use Hcode\Model;
+use Hcode\Control\Sql;
 
 class Product extends Model
 {

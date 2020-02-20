@@ -1,14 +1,14 @@
 <?php
 
 use Hcode\Model\Address;
-use Hcode\Model\Page;
-use Hcode\Model\PageAdmin;
 use Hcode\Model\User;
 use Hcode\Model\Category;
 use Hcode\Model\Product;
 use Hcode\Model\Cart;
 use Hcode\Model\Order;
 use Hcode\Model\OrderStatus;
+use Hcode\Control\Page;
+use Hcode\Control\PageAdmin;
 
 ########################################################################################################################
 # Páginas do Site - INICIO

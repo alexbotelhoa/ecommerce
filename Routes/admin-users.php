@@ -1,7 +1,7 @@
 <?php
 
-use Hcode\Model\PageAdmin;
 use Hcode\Model\User;
+use Hcode\Control\PageAdmin;
 
 ########################################################################################################################
 # Página de Administração de Usuários - INICIO
