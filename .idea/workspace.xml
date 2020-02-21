@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f975e39-fd54-42b8-a121-fee38d47d4c9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin-categories.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin-login.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin-orders.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin-products.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin-senha.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin-users.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/DB/Sql.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Mailer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Address.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Cart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Category.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Order.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/OrderStatus.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/Product.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Model/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/Page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/hcodebr/php-classes/src/PageAdmin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/PHPMailerAutoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmailer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmaileroauth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmaileroauthgoogle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.pop3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.smtp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/DKIM.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/code_generator.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/contactform.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/contents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/contentsutf8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/exceptions.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/gmail.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/gmail_xoauth.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/images/phpmailer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/images/phpmailer_mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/mail.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/mailing_list.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/pop_before_smtp.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/XRegExp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/send_file_upload.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/send_multiple_file_upload.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/sendmail.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/signed-mail.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/smtp.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/smtp_check.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/smtp_no_auth.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/ssl_options.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCore.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreDjango.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreEclipse.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreEmacs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreFadeToGrey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreMDUltra.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreMidnight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreRDark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeAppleScript.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeDjango.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeEclipse.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeEmacs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeFadeToGrey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeMDUltra.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeMidnight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeRDark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeVisualStudio.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/wrapping.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/extras/EasyPeasyICS.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/extras/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/extras/htmlfilter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/extras/ntlm_sasl_client.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-am.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-az.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-bg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ca.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-cs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-da.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-el.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-eo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-es.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-et.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-gl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-he.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ja.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ka.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ko.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-nb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-nl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt_br.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-uk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-vi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh_cn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/example-all.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/example-bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/example-draw-string.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/example-extend-class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/example-nested-loop.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/example-plugin-img-resize.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/example-simple.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/example-webpage-new.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/example-webpage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl/IPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl/NotFoundException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl/Plugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl/Plugin/Compress.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl/Plugin/ImageResize.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl/Plugin/PathReplace.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl/PluginContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/library/Rain/Tpl/SyntaxException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/hero.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/js/bootstrap-alerts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/js/bootstrap-buttons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/js/bootstrap-dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/js/bootstrap-modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/js/bootstrap-popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/js/bootstrap-scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/js/bootstrap-tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/js/bootstrap-twipsy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/js/less-1.1.5.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/lib/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/lib/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/lib/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/lib/patterns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/lib/reset.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/lib/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/lib/tables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/lib/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/bootstrap/lib/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/image_resize/img/logo.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/image_resize/img/wysiwyg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/image_resize/page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/image_resize/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/nested_loop/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/nested_loop/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl2/img/bottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl2/img/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl2/img/top.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl2/page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl2/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/bg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/bottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/easy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/easy_text.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/fast.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/fast_text.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/googlegroup.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/groups_logo_sm.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/groups_logo_sm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/groups_logo_sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/home_title.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/list.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/pencil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/search.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/top.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/useful.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/useful_text.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/wysiwyg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/img/wysiwyg_text.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/raintpl3/subfolder/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/simple/simple_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/simple/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/test/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/templates/test/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/tests/Rain/Tpl/PluginContainerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/tests/Rain/Tpl/PluginTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/tests/Rain/TplTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/rain/raintpl/tests/Rain/_files/template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/README.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Environment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/Pass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/RequestSlash.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/Stop.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Http/Headers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Http/Request.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Http/Response.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Http/Util.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Log.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/LogWriter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/ContentTypes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/Flash.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/MethodOverride.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/SessionCookie.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Route.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Router.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/Slim.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/Slim/View.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/phpunit.xml.dist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/EnvironmentTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Http/HeadersTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Http/RequestTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Http/ResponseTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Http/UtilTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/LogTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/LogWriterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Middleware/ContentTypesTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Middleware/FlashTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Middleware/MethodOverrideTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Middleware/PrettyExceptionsTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/Middleware/SessionCookieTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/MiddlewareTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/RouteTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/RouterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/SlimTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/ViewTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/slim/slim/tests/templates/test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/cart.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/categories-menu.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/categories-products.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/categories.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/category.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/checkout.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/footer.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/footer.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/forgot-reset-success.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/forgot-reset.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/forgot-sent.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/forgot.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/forgot.852dbb49483fce5d6116e41c07785598.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/header.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/header.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/index.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/index.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/login.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/login.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/order-status.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/order.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/orders.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/payment.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/product-detail.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/products-update.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/products.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/profile-change-password.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/profile-menu.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/profile-orders-detail.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/profile-orders.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/profile.68e96a8757cce6e4896467a7f08b8bd8.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/users-create.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/users-update.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views-cache/users.89c567658a9f300ca861a4b1ef827d17.rtpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/categories-create.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/categories-products.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/categories-update.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/categories.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/forgot-reset-success.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/forgot-reset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/forgot-sent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/forgot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/order-status.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/order.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/orders.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/products-create.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/products-update.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/products.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/users-create.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/users-update.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/users.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/email/forgot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/cart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/categories-menu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/category.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/checkout.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/forgot-reset-success.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/forgot-reset.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/forgot-sent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/forgot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/payment.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/product-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/profile-change-password.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/profile-menu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/profile-orders-detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/profile-orders.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/site/profile.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ecommerce.iml" afterPath="$PROJECT_DIR$/.idea/ecommerce.iml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/vendor/composer/" />
+    <ignored path="$PROJECT_DIR$/vendor/hcodebr/php-classes/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpmailer/phpmailer/" />
+    <ignored path="$PROJECT_DIR$/vendor/rain/raintpl/" />
+    <ignored path="$PROJECT_DIR$/vendor/slim/slim/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/Control/Sql.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/rain/raintpl" />
+      <path value="$PROJECT_DIR$/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/hcodebr/php-classes" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f975e39-fd54-42b8-a121-fee38d47d4c9" name="Default" comment="" />
+      <created>1582288019440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582288019440</updated>
+      <workItem from="1582288020643" duration="38000" />
+      <workItem from="1582288104073" duration="23000" />
+      <workItem from="1582288329582" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="106000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Control/Sql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

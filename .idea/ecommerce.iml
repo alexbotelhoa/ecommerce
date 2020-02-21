@@ -11,23 +11,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHP" type="php">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/hcodebr/php-classes" />
-          <root url="file://$MODULE_DIR$/vendor/phpmailer/phpmailer" />
-          <root url="file://$MODULE_DIR$/vendor/rain/raintpl" />
-          <root url="file://$MODULE_DIR$/vendor/slim/slim" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/hcodebr/php-classes" />
-          <root url="file://$MODULE_DIR$/vendor/phpmailer/phpmailer" />
-          <root url="file://$MODULE_DIR$/vendor/rain/raintpl" />
-          <root url="file://$MODULE_DIR$/vendor/slim/slim" />
-        </SOURCES>
-      </library>
-    </orderEntry>
   </component>
 </module>
